@@ -26,7 +26,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*'] # just for testing purposes
+ALLOWED_HOSTS = ['https://zeero-inventory-arc5efdsb8chdecp.canadacentral-01.azurewebsites.net/'] # just for testing purposes
 
 
 # Application definition
