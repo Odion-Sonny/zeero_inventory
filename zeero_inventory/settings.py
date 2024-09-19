@@ -77,17 +77,11 @@ WSGI_APPLICATION = 'zeero_inventory.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
-# DATABASES = {
-# 	'default': {
-# 		'ENGINE': 'django.db.backends.postgresql_psycopg2',
-# 		'NAME': config('DATABASE_NAME'),
-# 		'USER': config('DATABASE_USER'),
-# 		'PASSWORD': config('DATABASE_PASSWORD'),
-# 		'HOST': config('DATABASE_HOST'),
-# 		'PORT': config('DATABASE_PORT'),
-# 		'CONN_MAX_AGE': 500,
-# 	}
-# }
+DATABASES = {
+	'default': {
+		'ENGINE': 'django.db.backends.postgresql_psycopg2',
+	}
+}
 DATABASES['default'] = dj_database_url.parse(os.environ.get('DATABASE_URL'))
 
 
